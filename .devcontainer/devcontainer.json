@@ -18,12 +18,16 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "ms-python.python",
-                "ms-python.black-formatter",
-                "ms-python.vscode-pylance",
-                "charliermarsh.ruff",
-	        "ms-python.debugpy"
-            ]
+				"ms-python.python",
+				"ms-python.black-formatter",
+				"ms-python.vscode-pylance",
+				"charliermarsh.ruff",
+				"ms-python.debugpy",
+				"bierner.markdown-mermaid",
+				"github.copilot@prerelease",
+				"github.copilot-chat@prerelease",
+				"Upstash.context7-mcp"
+			]
         }
     }
 
