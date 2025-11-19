@@ -66,9 +66,7 @@ flowchart LR
 
 We need a Python application to test. Your instructor has provided a starter repository via GitHub Classroom.
 
-1.  **Accept the Assignment**: Click the following link to create your repository:  
-    👉 **[https://classroom.github.com/a/rQljHe_C](https://classroom.github.com/a/rQljHe_C)**
-
+1.  **Accept the Assignment**: Click the following link to create your repository.
 2.  **Open Your Repository**: Once the repository is created, click the link to open it on GitHub.
 
 3.  **Launch Codespaces**:
@@ -93,12 +91,12 @@ Instead of writing YAML manually or copy-pasting, we will ask the AI Agent to cr
 
 ### Step 1: The Agent Prompt
 
-1.  Open **Copilot Edits** (often called **Agent Mode**) by pressing `Ctrl + Shift + I` (Windows/Linux) or `Cmd + Shift + I` (Mac).
-      * *Note: Look for the "Agent" or "Edit" mode in the Copilot pane.*
+1.  Open **Copilot Chat** **Agent** mode.
 
-2.  Enter the following prompt. Be specific about the filename and requirements!
+2.  Enter the following prompt. Be specific about the filename and requirements!  
+**Prompt:**  
 
-    > **Prompt:** "Create a GitHub Actions workflow file named python-app.yml. It should run on push to the 'main' branch. It needs to install dependencies from requirements.txt, run flake8 for linting, and run tests using pytest. Name the workflow 'Python CI'."
+    > Create a GitHub Actions workflow file named python-app.yml. It should run on push to the 'main' branch. It needs to install dependencies from requirements.txt, run flake8 for linting, and run tests using pytest. Name the workflow 'Python CI'.
 
 3.  **Review the Plan:** The Agent will analyse your workspace and propose creating a new file path: `.github/workflows/python-app.yml`.
 
