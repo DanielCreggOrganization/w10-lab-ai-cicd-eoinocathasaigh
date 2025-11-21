@@ -115,15 +115,12 @@ We want to add a step to our pipeline that prints the version of Flask currently
 
 ### Step 3: Update the Workflow
 
-1.  Open `.github/workflows/python-app.yml`.
-2.  **Agent Shortcut:** You can also highlight the file content and ask Copilot Edits: *"Add a step to the build job that prints the Flask version"*.
-3.  Alternatively, paste the command manually:
-    ```yaml
-    - name: Check Flask Version
-      run: <PASTE_YOUR_COMMAND_HERE>
-    ```
-4.  Commit and push.
-5.  Watch the Action run on GitHub. Expand the "Check Flask Version" step in the logs to see if it worked.
+1.  Ask Copilot to:
+
+> Add a step to the build job that prints the Flask version
+
+2.  Commit and push.
+3.  Watch the Action run on GitHub. Expand the "Check Flask Version" step in the logs to see if it worked.
 
 -----
 
