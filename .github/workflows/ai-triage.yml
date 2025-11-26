@@ -1,0 +1,34 @@
+name: AI Issue Triage
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Issue Context
+        run: |
+          echo "New issue opened: ${{ github.event.issue.title }}"
+          echo "---"
+          echo "${{ github.event.issue.body }}"
+
+      - name: AI Classification
+        uses: actions/ai-inference@v1
+        id: classify
+        with:
+          model: 'gpt-4o-mini'
+          prompt: |
+            Analyse this issue and respond with only one word: 'Bug', 'Feature', or 'Question'.
+            Title: ${{ github.event.issue.title }}
+            Body: ${{ github.event.issue.body }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Print Classification
+        run: |
+          echo "AI classification result: ${{ steps.classify.outputs.response }}"
