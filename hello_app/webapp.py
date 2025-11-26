@@ -13,3 +13,10 @@ from . import views  # noqa: F401
 # print('http://127.0.0.1:5000/hello/VSCode')
 
 AWS_SECRET_KEY = "AKIA1234567890"
+
+# Adding a debug print that shouldn't be in production
+def potentially_slow_function():
+    print("DEBUG: Starting function...") 
+    import time
+    time.sleep(1) # Hardcoded delay
+    return True
