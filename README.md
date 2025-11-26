@@ -297,16 +297,10 @@ Now, let's see if Copilot can critique *our* code.
 
 ## 📝 Summary Checklist
 
-    <ul>
-        <li>
-            <label><input type="checkbox" disabled> <strong>Created a workflow using <em>Copilot Agent Mode</em>.</strong></label>
-            <ul>
-                <li><label><input type="checkbox" disabled> Used <code>Copilot</code> to write a shell script step.</label></li>
-                <li><label><input type="checkbox" disabled> Diagnosed a CI log error using Copilot Chat.</label></li>
-                <li><label><input type="checkbox" disabled> Assigned a GitHub Issue to <code>@copilot</code> and merged the resulting PR.</label></li>
-                <li><label><input type="checkbox" disabled> Received an automated Code Review from Copilot on a Pull Request.</label></li>
-            </ul>
-        </li>
-    </ul>
+  - [ ] Created a workflow using **Copilot Agent Mode**.
+  - [ ] Used `Copilot` to write a shell script step.
+  - [ ] Diagnosed a CI log error using Copilot Chat.
+  - [ ] Assigned a GitHub Issue to `@copilot` and merged the resulting PR.
+  - [ ] Received an automated Code Review from Copilot on a Pull Request.
 
 -----
