@@ -8,6 +8,6 @@ def test_home_route():
         assert response.status_code == 200
 
 
-# Test from the lab that's expected to fail
+# Test corrected to pass
 def test_math_fail():
-    assert 1 + 1 == 3
+    assert 1 + 1 == 2
